@@ -165,6 +165,14 @@ body.dark-mode .cta-circle {
   background: rgba(48, 35, 27, .45) !important;
 }
 
+/* Daily Specials slanted accent panel: hard-coded #fff in main.css, which
+   rendered as a flat grey slab on the dark background. Use a warm surface
+   tone so it stays a soft highlight, same as in light mode. */
+body.dark-mode .specials-decoration {
+  background: var(--surface-container) !important;
+  opacity: .6;
+}
+
 body.dark-mode .map-image,
 body.dark-mode .map-box {
   filter: brightness(.75) saturate(1.05);
